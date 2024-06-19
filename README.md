@@ -1,4 +1,4 @@
-#CodeTab
+# CodeTab
 
 ![](config/record.gif)
 
