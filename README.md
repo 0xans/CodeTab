@@ -1,6 +1,6 @@
-# Typing Test
+#CodeTab
 
-## Name: CodeTab
+![](config/record.gif)
 
 ## Author: 0xans
 
