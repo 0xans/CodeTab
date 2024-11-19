@@ -23,8 +23,11 @@ start_time = None
 stop_test = False
 
 def refresh(correct, wrong, elapsed_time):
-    system(f'title Correct: {correct}, Wrong: {wrong}, Time: {elapsed_time:.0f}s')
-    return
+    if name == 'nt':
+        system(f'title Correct: {correct}, Wrong: {wrong}, Time: {elapsed_time:.0f}s')
+    else:
+        sys.stdout.write(f"\033]0;Correct: {correct}, Wrong: {wrong}, Time: {elapsed_time:.0f}s\007")
+        sys.stdout.flush()
 
 def file(path):
     with open(path, 'r') as file:
